@@ -10,9 +10,14 @@
             border-style: solid;
             border-color: gray;
             border-width: 1px;
+            height: 800px;
 
         }
 
+        .page-title-style {
+            margin-left: 70px;
+            font-family: 'Courier New', Courier, monospace;
+        }
         .header-style {
             background-color: rgb(201, 7, 7);
             padding: 8px;
@@ -23,7 +28,6 @@
             height: 30px;
             margin-left: 60px;
         }
-
 
         .login-style {
             height: 20px;
@@ -47,8 +51,61 @@
             float: right;
             text-align: center;
             margin-right: 5%;
-
         }
+
+        .filters-style {
+            border-style:outset;
+            width: 20%;
+            size: 30%;
+            float: left;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+
+
+        .locations-list-style {
+            border-style:outset;
+            width: 70%;
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        
+        .card-style {
+            border-style:outset;
+            width: 40%;
+            margin-left: 30px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .restaurant-icon-style {
+            height: 80px;
+            margin-left: 60px;
+            float: left;
+            margin-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .restaurant-name-style {
+            width: 70%;
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .restaurant-address-style {
+            width: 70%;
+            margin-left: 10px;
+            float: left;
+        }
+
+        .restaurant-address-details-style {
+            width: 70%;
+            margin-left: 10px;
+            float: left;
+        }
+
     </style>
 </head>
 
@@ -63,26 +120,69 @@
 
         </div>
         <div id="page-title">
-            Breakfast Places in Mumbai
+            <h1 class="page-title-style">Breakfast Places in Mumbai</h1>
         </div>
-        <div id="Filters">
-            Here goes the filters
+        <div id="Filters" class="filters-style">
+            <h3>Filters</h3>
             <div id="Selection">
-                Select Location:
+                <h4>Select Location</h4>
+                <select name="location" id="location-list" class="locations-list-style">
+                    <option value="nolocation" disabled selected>Select Location   </option>
+                    <option value="Chincholi">Chincholi</option>
+                    <option value="Worli">Worli</option>
+                    <option value="Parel">Parel</option>
+                    <option value="Dadar">Dadar</option>
+                  </select>
             </div>
             <div id="Cuisine-options">
-                <select id="cuisine-options">Select Location</select>
+                <h4>Cuisine</h4>
+                <input id="check-north-indian" type="checkbox">North Indian</input>
+                <br>
+                <input id="check-south-indian" type="checkbox">South Indian</input>
+                <br>
+                <input id="check-chinese" type="checkbox">Chinese</input>
+                <br>
+                <input id="check-fast-food" type="checkbox">Fast Food</input>
+                <br>
+                <input id="check-street-food" type="checkbox">Street Food</input>
+                <br>
             </div>
-            <div id="Cost-for-too">
+            <div id="Cost-for-two">
+                <h4>Cost for two</h4>
                 <input id="radio-cost-for-two" type="radio">Less than $ 500</input>
+                <br>
                 <input id="radio-cost-for-two" type="radio">$ 500 to 1000</input>
+                <br>
                 <input id="radio-cost-for-two" type="radio">$ 1500 to 2000</input>
+                <br>
                 <input id="radio-cost-for-two" type="radio">$ 2000+</input>
+                <br>
+            </div>
+            <div id="sort-option">
+                <h4>Sort</h4>
+                <input id="radio-low-to-high" type="radio">Price low to high</input>
+                <br>
+                <input id="radio-high-to-low" type="radio">Price high to low</input>
+                <br>
             </div>
         </div> 
 
-        <div id="Filters">
-            Here goes the filters
+        <div id="card1" class="card-style">
+            <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
+            <h2 class="restaurant-name-style"> The Big Chill Cakery </h2>
+            <h3 class="restaurant-address-style">Fort</h3>
+            <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
+            <h4>CUISINES: Bakery</h3>
+            <h4>Cost for two: $700</h4>
+        </div>
+        <div id="card2" class="card-style">
+            <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
+            <h2 class="restaurant-name-style"> The Bake Shop </h2>
+            <h3 class="restaurant-address-style">Fort</h3>
+            <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
+            <h4>CUISINES: Bakery</h3>
+            <h4>Cost for two: $700</h4>
+            
         </div>
     </div>
 
