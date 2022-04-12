@@ -2,122 +2,16 @@
 
 <head>
     <title>Restaurants Search!</title>
-    <link rel="icon" href="brkfst-srch-icon.png">
-    </link>
-    <style>
-        .full-page-style {
-            margin: 20px;
-            border-style: solid;
-            border-color: gray;
-            border-width: 1px;
-            height: 800px;
-
-        }
-
-        .page-title-style {
-            margin-left: 70px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .header-style {
-            background-color: rgb(201, 7, 7);
-            padding: 8px;
-            height: 30px;
-        }
-
-        .header-icon-style {
-            height: 30px;
-            margin-left: 60px;
-        }
-
-        .login-style {
-            height: 20px;
-            width: 100px;
-            font-family: 'Courier New', Courier, sans-serif;
-            color: white;
-            float: right;
-            padding: 3px;
-        }
-
-        .create-account-style {
-            height: 20px;
-            width: 200px;
-            font-family: 'Courier New', Courier, sans-serif;
-            color: white;
-            border-style: solid;
-            border-radius: 3px;
-            border-color: white;
-            border-width: 1px;
-            padding: 3px;
-            float: right;
-            text-align: center;
-            margin-right: 5%;
-        }
-
-        .filters-style {
-            border-style:outset;
-            width: 20%;
-            size: 30%;
-            float: left;
-            margin-left: 60px;
-            margin-top: 20px;
-        }
-
-
-        .locations-list-style {
-            border-style:outset;
-            width: 70%;
-            padding: 10px;
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        
-        
-        .card-style {
-            border-style:outset;
-            width: 40%;
-            margin-left: 30px;
-            float: left;
-            margin-top: 20px;
-        }
-
-        .restaurant-icon-style {
-            height: 80px;
-            margin-left: 60px;
-            float: left;
-            margin-top: 20px;
-            padding-bottom: 30px;
-        }
-
-        .restaurant-name-style {
-            width: 70%;
-            margin-left: 10px;
-            float: left;
-        }
-        
-        .restaurant-address-style {
-            width: 70%;
-            margin-left: 10px;
-            float: left;
-        }
-
-        .restaurant-address-details-style {
-            width: 70%;
-            margin-left: 10px;
-            float: left;
-        }
-
-    </style>
+    <link rel="icon" href="brkfst-srch-icon.png"></link>
+    <link rel="stylesheet" href="restaurant-srch.css"></link>
 </head>
 
 <body>
     <div id="full-page-container" class="full-page-style">
-
         <div id="header" class="header-style">
-
             <img id="edureka-image" src="edureka-header-icon.png" class="header-icon-style">
             <div id="create-account" class="create-account-style">Create an account</div>
             <div id="login" class="login-style">Login</div>
-
         </div>
         <div id="page-title">
             <h1 class="page-title-style">Breakfast Places in Mumbai</h1>
@@ -127,12 +21,12 @@
             <div id="Selection">
                 <h4>Select Location</h4>
                 <select name="location" id="location-list" class="locations-list-style">
-                    <option value="nolocation" disabled selected>Select Location   </option>
+                    <option value="nolocation" disabled selected>Select Location </option>
                     <option value="Chincholi">Chincholi</option>
                     <option value="Worli">Worli</option>
                     <option value="Parel">Parel</option>
                     <option value="Dadar">Dadar</option>
-                  </select>
+                </select>
             </div>
             <div id="Cuisine-options">
                 <h4>Cuisine</h4>
@@ -168,24 +62,36 @@
         </div> 
 
         <div id="card1" class="card-style">
-            <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
-            <h2 class="restaurant-name-style"> The Big Chill Cakery </h2>
-            <h3 class="restaurant-address-style">Fort</h3>
-            <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
-            <h4>CUISINES: Bakery</h3>
-            <h4>Cost for two: $700</h4>
+            <div id="card-header-section1" class="card-header-section-style">
+                <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
+                <h2 class="restaurant-name-style"> The Big Chill Cakery </h2>
+                <h3 class="restaurant-address-style">Fort</h3>
+                <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
+            </div>
+            <hr width="85%">
+            <h4 class="cuisines-style">CUISINES: Bakery</h4>
+            <h4 class="cost-for-two-style">Cost for two: $700</h4>
         </div>
         <div id="card2" class="card-style">
-            <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
-            <h2 class="restaurant-name-style"> The Bake Shop </h2>
-            <h3 class="restaurant-address-style">Fort</h3>
-            <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
-            <h4>CUISINES: Bakery</h3>
-            <h4>Cost for two: $700</h4>
-            
+            <div id="card-header-section2" class="card-header-section-style">
+                <img id="edureka-image" src="restaurant-icon.png" class="restaurant-icon-style">
+                <h2 class="restaurant-name-style"> The Bake Shop </h2>
+                <h3 class="restaurant-address-style">Fort</h3>
+                <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
+            </div>
+            <hr width="85%">
+            <h4 class="cuisines-style">CUISINES: Bakery</h4>
+            <h4 class="cost-for-two-style">Cost for two: $700</h4>
+        </div>
+        <div id="pagination" class="pagination-style">
+            <button class="pagination-button-style pagination-prev-button-style "> < </button>
+            <button class="pagination-button-style"> 1 </button>
+            <button class="pagination-button-style"> 2 </button>
+            <button class="pagination-button-style"> 3 </button>
+            <button class="pagination-button-style"> 4 </button>
+            <button class="pagination-button-style pagination-next-button-style"> > </button>
         </div>
     </div>
-
 </body>
 
 </html>
