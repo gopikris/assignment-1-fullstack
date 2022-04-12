@@ -54,6 +54,7 @@
     margin-top: 20px;
     padding: 20px;
     padding-bottom: 80px;
+    font-family: sans-serif;
 }
 
 
@@ -63,9 +64,21 @@
     padding: 10px;
     margin-left: 20px;
     margin-top: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    /* -webkit-appearance: menulist-button;
+    -moz-appearance: menulist-button;
+    appearance: menulist-button;
+    */
 }
 
+.cost-for-2-radio-style {
+    font-family: sans-serif;
+}
 
+.sort-option-style {
+    font-family: sans-serif;
+}
 .card-style {
     border-style: outset;
     width: 50%;
@@ -75,7 +88,7 @@
 }
 
 .card-header-section-style {
-    height: 200px;;
+    min-height: 100px;;
 }
 
 .restaurant-icon-style {
@@ -107,16 +120,51 @@
     font-family: Helvetica, sans-serif;
 }
 
-.cuisines-style {
+.cuisines-label-style {
     margin-left: 60px;
     font-weight: lighter;
+    font-family: sans-serif;
+    height: 20px;
+    width: 100px;
+    color: black;
+    float: left;
+    padding: 10px;
 }
 
-.cost-for-two-style {
+.cuisines-value-style {
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width:60%;
+    color: black;
+    float: left;
+    padding: 10px;
+}
+
+.cost-for-two-label-style {
     margin-left: 60px;
     font-weight: lighter;
+    font-family: sans-serif;
+    height: 20px;
+    width: 100px;
+    color: black;
+    float: left;
+    padding: 10px;
 }
 
+.cost-for-two-value-style {
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width:60%;
+    color: black;
+    float: left;
+    padding: 10px;
+}
 .pagination-style {
     margin-left: 50%; 
     margin-top: 700px;

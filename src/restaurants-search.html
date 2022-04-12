@@ -2,8 +2,10 @@
 
 <head>
     <title>Restaurants Search!</title>
-    <link rel="icon" href="brkfst-srch-icon.png"></link>
-    <link rel="stylesheet" href="restaurant-srch.css"></link>
+    <link rel="icon" href="brkfst-srch-icon.png">
+    </link>
+    <link rel="stylesheet" href="restaurant-srch.css">
+    </link>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
             <h3>Filters</h3>
             <div id="Selection">
                 <h4>Select Location</h4>
-                <select name="location" id="location-list" class="locations-list-style">
+                <select id="location-list" class="locations-list-style">
                     <option value="nolocation" disabled selected>Select Location </option>
                     <option value="Chincholi">Chincholi</option>
                     <option value="Worli">Worli</option>
@@ -41,18 +43,18 @@
                 <input id="check-street-food" type="checkbox">Street Food</input>
                 <br>
             </div>
-            <div id="Cost-for-two">
+            <div id="Cost-for-two" class="cost-for-2-radio-style">
                 <h4>Cost for two</h4>
-                <input id="radio-cost-for-two" type="radio">Less than $ 500</input>
+                <input id="radio-cost-for-two" type="radio">Less than ₹ 500</input>
                 <br>
-                <input id="radio-cost-for-two" type="radio">$ 500 to 1000</input>
+                <input id="radio-cost-for-two" type="radio">₹ 500 to 1000</input>
                 <br>
-                <input id="radio-cost-for-two" type="radio">$ 1500 to 2000</input>
+                <input id="radio-cost-for-two" type="radio">₹ 1500 to 2000</input>
                 <br>
-                <input id="radio-cost-for-two" type="radio">$ 2000+</input>
+                <input id="radio-cost-for-two" type="radio">₹ 2000+</input>
                 <br>
             </div>
-            <div id="sort-option">
+            <div id="sort-option" class="sort-option-style">
                 <h4>Sort</h4>
                 <input id="radio-low-to-high" type="radio">Price low to high</input>
                 <br>
@@ -68,9 +70,21 @@
                 <h3 class="restaurant-address-style">Fort</h3>
                 <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
             </div>
-            <hr width="85%">
-            <h4 class="cuisines-style">CUISINES: Bakery</h4>
-            <h4 class="cost-for-two-style">Cost for two: $700</h4>
+            <div>
+                <hr width="85%">
+                <div id="cuisines-label" class="cuisines-label-style">
+                    CUISINES: 
+                </div>
+                <div id="cuisines-value" class="cuisines-value-style">
+                    Bakery 
+                </div>
+                <div id=cost-for-two-label class="cost-for-two-label-style">
+                    Cost for two:
+                </div> 
+                <div id=cost-for-two-value class="cost-for-two-value-style">
+                    ₹700
+                </div> 
+            </div>
         </div>
         <div id="card2" class="card-style">
             <div id="card-header-section2" class="card-header-section-style">
@@ -79,17 +93,30 @@
                 <h3 class="restaurant-address-style">Fort</h3>
                 <h4 class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</h4>
             </div>
-            <hr width="85%">
-            <h4 class="cuisines-style">CUISINES: Bakery</h4>
-            <h4 class="cost-for-two-style">Cost for two: $700</h4>
+            <div>
+                <hr width="85%">
+                <div id="cuisines-label" class="cuisines-label-style">
+                    CUISINES: 
+                </div>
+                <div id="cuisines-value" class="cuisines-value-style">
+                    Bakery 
+                </div>
+                <div id=cost-for-two-label class="cost-for-two-label-style">
+                    Cost for two:
+                </div> 
+                <div id=cost-for-two-value class="cost-for-two-value-style">
+                    ₹700
+                </div> 
+            </div>
         </div>
         <div id="pagination" class="pagination-style">
-            <button class="pagination-button-style pagination-prev-button-style "> < </button>
-            <button class="pagination-button-style"> 1 </button>
-            <button class="pagination-button-style"> 2 </button>
-            <button class="pagination-button-style"> 3 </button>
-            <button class="pagination-button-style"> 4 </button>
-            <button class="pagination-button-style pagination-next-button-style"> > </button>
+            <button class="pagination-button-style pagination-prev-button-style ">
+                < </button>
+                    <button class="pagination-button-style"> 1 </button>
+                    <button class="pagination-button-style"> 2 </button>
+                    <button class="pagination-button-style"> 3 </button>
+                    <button class="pagination-button-style"> 4 </button>
+                    <button class="pagination-button-style pagination-next-button-style"> > </button>
         </div>
     </div>
 </body>
