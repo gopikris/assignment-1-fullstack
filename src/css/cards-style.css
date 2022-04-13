@@ -11,7 +11,6 @@
 
 .card-header-section-style {
     min-height: 100px;
-    ;
 }
 
 .restaurant-icon-style {
@@ -53,7 +52,7 @@
     font-family: Poppins, sans-serif;
     height: 20px;
     width: 100px;
-    color: black;
+    color: #636F88;
     float: left;
     padding: 5px;
 }
@@ -65,7 +64,7 @@
     font-weight: bold;
     height: 20px;
     width: 60%;
-    color: black;
+    color: #192F60;
     float: left;
     padding: 5px;
 }
@@ -76,7 +75,7 @@
     font-family: Poppin, sans-serif;
     height: 20px;
     width: 100px;
-    color: black;
+    color: #636F88;
     float: left;
     padding: 5px;
 }
@@ -88,7 +87,7 @@
     font-weight: bold;
     height: 20px;
     width: 60%;
-    color: black;
+    color: #192F60;
     float: left;
     padding: 5px;
 }
