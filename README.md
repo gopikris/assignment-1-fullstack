@@ -2,7 +2,7 @@
 
 This repo is to develop a small restaurant search portal that looks like below
 
-![image](images/breakfast-places-img.png)
+![image](docs/images/breakfast-places-img.png)
 
 This exercise helps understand the following concepts
 HTML(divs), CSS(inline, external), anchor (with target options), link, background, border, margin, padding, etc.
