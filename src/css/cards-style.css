@@ -51,14 +51,14 @@
     font-weight: lighter;
     font-family: Poppins, sans-serif;
     height: 20px;
-    width: 100px;
+    width: 150px;
     color: #636F88;
     float: left;
     padding: 5px;
 }
 
 .cuisines-value-style {
-    margin-left: 10px;
+    margin-left: 40px;
     font-weight: lighter;
     font-family: Poppins, sans-serif;
     font-weight: bold;
@@ -72,16 +72,16 @@
 .cost-for-two-label-style {
     margin-left: 60px;
     font-weight: lighter;
-    font-family: Poppin, sans-serif;
+    font-family: Poppins, sans-serif;
     height: 20px;
-    width: 100px;
+    width: 150px;
     color: #636F88;
     float: left;
     padding: 5px;
 }
 
 .cost-for-two-value-style {
-    margin-left: 10px;
+    margin-left: 40px;
     font-weight: lighter;
     font-family: Poppins, sans-serif;
     font-weight: bold;
