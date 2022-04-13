@@ -1,0 +1,94 @@
+.card-style {
+    border-style: outset;
+    width: 50%;
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 30px;
+}
+
+.card-header-section-style {
+    min-height: 100px;
+    ;
+}
+
+.restaurant-icon-style {
+    height: 90px;
+    margin-left: 60px;
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.restaurant-name-style {
+    width: 70%;
+    margin-left: 15px;
+    float: left;
+    font-family: Poppins, sans-serif;
+}
+
+.restaurant-address-style {
+    width: 60%;
+    height: 23px;
+    margin-left: 15px;
+    float: left;
+    font-family: Poppins, sans-serif;
+}
+
+.restaurant-address-details-style {
+    width: 380px;
+    height: 23px;
+    margin-left: 15px;
+    float: left;
+    color: #636F88;
+    font-family: Poppins, sans-serif;
+    font-weight: lighter;
+}
+
+.cuisines-label-style {
+    margin-left: 60px;
+    font-weight: lighter;
+    font-family: Poppins, sans-serif;
+    height: 20px;
+    width: 100px;
+    color: black;
+    float: left;
+    padding: 5px;
+}
+
+.cuisines-value-style {
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width: 60%;
+    color: black;
+    float: left;
+    padding: 5px;
+}
+
+.cost-for-two-label-style {
+    margin-left: 60px;
+    font-weight: lighter;
+    font-family: Poppin, sans-serif;
+    height: 20px;
+    width: 100px;
+    color: black;
+    float: left;
+    padding: 5px;
+}
+
+.cost-for-two-value-style {
+    margin-left: 10px;
+    font-weight: lighter;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width: 60%;
+    color: black;
+    float: left;
+    padding: 5px;
+}

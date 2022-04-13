@@ -1,0 +1,115 @@
+.filters-style {
+    border-style: outset;
+    width: 20%;
+    float: left;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 80px;
+    font-family: sans-serif;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.filters-label-style {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #191f60;
+}
+
+.filter-options-style {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #8c96ab;
+}
+
+
+.locations-list-style {
+    border: 1px solid #8C96AB;
+    border-radius: 3px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    color: #8c96ab;
+    line-height: 21px;
+}
+
+/* Hide the default checkbox style */
+.hide-default-chkbox-container {
+    visibility: hidden;
+}
+
+/*Create a container for the chkbox */
+.chkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    color: #8C96AB;
+}
+
+/* Create a custom checkbox */
+.custom-chkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
+    border-color: #3A5075;
+    border-style: solid;
+    opacity: 1;
+}
+
+/* Create the mark/indicator (hidden when not checked) */
+.custom-chkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Style the tick mark/indicator */
+.custom-chkbox:after {
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+
+.custom-chkbox:hover {
+    background-color: gray;
+}
+
+.chkbox-container input:checked~.custom-chkbox {
+    background-color: #3A5075;
+}
+
+/* Show the tick mark */
+.chkbox-container input:checked~.custom-chkbox:after {
+    display: block;
+}
+
+.cost-for-2-radio-style {
+    font-family: Poppins, sans-serif;
+    color: #8c96ab;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.sort-option-style {
+    font-family: Poppins, sans-serif;
+    color: #8c96ab;
+    line-height: 21px;
+    font-size: 14px;
+}
