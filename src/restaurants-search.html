@@ -8,132 +8,180 @@
     <link rel="stylesheet" href="css/filters-style.css">
     <link rel="stylesheet" href="css/cards-style.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="full-page-container" class="full-page-style">
-        <div id="header" class="header-style">
-            <img id="edureka-image" src="images/edureka-header-icon.png" class="header-icon-style">
-            <div id="create-account" class="create-account-style">Create an account</div>
-            <div id="login" class="login-style">Login</div>
+    <div class="container-fluid full-page-style">
+        <div id="header" class="header-style row">
+            <div id="hdr-space1" class="col-sm-1"></div>
+            <img id="edureka-image" src="images/edureka-header-icon.png" class="header-icon-style col-sm-1">
+            <div id="hdr-space1" class="col-sm-5"></div>
+            <div id="login" class="login-style col-sm-2">Login</div>
+            <div id="create-account" class="create-account-style col-sm-2">Create an account</div>
         </div>
-        <div id="page-title">
+        <br><br>
+        <div id="page-title row">
             <h1 class="page-title-style">Breakfast Places in Mumbai</h1>
         </div>
-        <div id="filters" class="filters-style">
-            <div>
-                <h3>Filters</h3>
-            </div>
-            <div id="Selection">
-                <h4 class="filters-label-style">Select Location</h4>
-                <select id="location-list" class="locations-list-style">
-                    <option value="nolocation" disabled selected>Select Location </option>
-                    <option value="Chincholi">Chincholi</option>
-                    <option value="Worli">Worli</option>
-                    <option value="Parel">Parel</option>
-                    <option value="Dadar">Dadar</option>
-                </select>
-            </div>
-            <div id="Cuisine-options">
-                <h4 class="filters-label-style">Cuisine</h4>
-                <label class="chkbox-container"> North Indian
-                    <input type="checkbox" class="hide-default-chkbox-container">
-                    <span class="custom-chkbox"></span>
-                </label>
-                <label class="chkbox-container"> South Indian
-                    <input type="checkbox" class="hide-default-chkbox-container">
-                    <span class="custom-chkbox"></span>
-                </label>
-                <label class="chkbox-container"> Chinese
-                    <input type="checkbox" class="hide-default-chkbox-container">
-                    <span class="custom-chkbox"></span>
-                </label>
-                <label class="chkbox-container"> Fast food
-                    <input type="checkbox" class="hide-default-chkbox-container">
-                    <span class="custom-chkbox"></span>
-                </label>
-                <label class="chkbox-container"> Street food
-                    <input type="checkbox" class="hide-default-chkbox-container">
-                    <span class="custom-chkbox"></span>
-                </label>
-            </div>
-            <div id="Cost-for-two" class="cost-for-2-radio-style">
-                <h4 class="filters-label-style">Cost for two</h4>
-                <input id="radio-cost-for-two" type="radio" class="filter-options-style">Less than ₹ 500</input>
-                <br>
-                <input id="radio-cost-for-two" type="radio" class="filter-options-style">₹ 500 to 1000</input>
-                <br>
-                <input id="radio-cost-for-two" type="radio" class="filter-options-style">₹ 1500 to 2000</input>
-                <br>
-                <input id="radio-cost-for-two" type="radio" class="filter-options-style">₹ 2000+</input>
-                <br>
-            </div>
-            <div id="sort-option" class="sort-option-style">
-                <h4 class="filters-label-style">Sort</h4>
-                <input id="radio-low-to-high" type="radio" class="filter-options-style">Price low to high</input>
-                <br>
-                <input id="radio-high-to-low" type="radio" class="filter-options-style">Price high to low</input>
-            </div>
-        </div>
-        <div id="card1" class="card-style">
-            <div id="card-header-section1" class="card-header-section-style">
-                <img id="edureka-image" src="images/restaurant-icon.png" class="restaurant-icon-style">
-                <h2 class="restaurant-name-style"> The Big Chill Cakery </h2>
-                <div class="restaurant-address-style">Fort</div>
-                <div class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</div>
-            </div>
-            <div>
-                <br>
-                <br>
-                <hr width="80%">
-                <br>
-                <div id="cuisines-label" class="cuisines-label-style">
-                    CUISINES:
+        <br><br>
+        <div id="search-results-display" class="row">
+            <div id="filters" class="filters-style col-sm-3">
+                <div>
+                    <h3>Filters</h3>
                 </div>
-                <div id="cuisines-value" class="cuisines-value-style">
-                    Bakery
-                </div>
-                <div id=cost-for-two-label class="cost-for-two-label-style">
-                    COST FOR TWO:
-                </div>
-                <div id=cost-for-two-value class="cost-for-two-value-style">
-                    ₹ 700
+                <div id="Selection">
+                    <h4 class="filters-label-style">Select Location</h4>
+                    <select id="location-list" class="locations-list-style">
+                        <option value="nolocation" disabled selected>Select Location </option>
+                        <option value="Chincholi">Chincholi</option>
+                        <option value="Worli">Worli</option>
+                        <option value="Parel">Parel</option>
+                        <option value="Dadar">Dadar</option>
+                    </select>
+                </div><br>
+                <div id="Cuisine-options">
+                    <h4 class="filters-label-style">Cuisine</h4>
+                    <label class="chkbox-container"> North Indian
+                        <input type="checkbox" class="hide-default-chkbox-container">
+                        <span class="custom-chkbox"></span>
+                    </label>
+                    <label class="chkbox-container"> South Indian
+                        <input type="checkbox" class="hide-default-chkbox-container">
+                        <span class="custom-chkbox"></span>
+                    </label>
+                    <label class="chkbox-container"> Chinese
+                        <input type="checkbox" class="hide-default-chkbox-container">
+                        <span class="custom-chkbox"></span>
+                    </label>
+                    <label class="chkbox-container"> Fast food
+                        <input type="checkbox" class="hide-default-chkbox-container">
+                        <span class="custom-chkbox"></span>
+                    </label>
+                    <label class="chkbox-container"> Street food
+                        <input type="checkbox" class="hide-default-chkbox-container">
+                        <span class="custom-chkbox"></span>
+                    </label>
+                </div><br>
+                <div id="Cost-for-two" class="cost-for-2-radio-style">
+                    <h4 class="filters-label-style">Cost for two</h4>
+                    <input id="radio-cost-for-two" type="radio" class="filter-options-style"> Less than ₹ 500</input>
+                    <br>
+                    <input id="radio-cost-for-two" type="radio" class="filter-options-style"> ₹ 500 to 1000</input>
+                    <br>
+                    <input id="radio-cost-for-two" type="radio" class="filter-options-style"> ₹ 1500 to 2000</input>
+                    <br>
+                    <input id="radio-cost-for-two" type="radio" class="filter-options-style"> ₹ 2000+</input>
+                    <br>
+                </div><br>
+                <div id="sort-option" class="sort-option-style">
+                    <h4 class="filters-label-style">Sort</h4>
+                    <input id="radio-low-to-high" type="radio" class="filter-options-style"> Price low to high</input>
+                    <br>
+                    <input id="radio-high-to-low" type="radio" class="filter-options-style"> Price high to low</input>
                 </div>
             </div>
-        </div>
-        <div id="card2" class="card-style">
-            <div id="card-header-section2" class="card-header-section-style">
-                <img id="edureka-image" src="images/restaurant-icon.png" class="restaurant-icon-style">
-                <h2 class="restaurant-name-style"> The Bake Shop </h2>
-                <div class="restaurant-address-style">Fort</div>
-                <div class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli ..</div>
-            </div>
-            <div>
-                <br>
-                <br>
-                <hr width="80%" >
-                <br>
-                <div id="cuisines-label" class="cuisines-label-style">
-                    CUISINES:
-                </div>
-                <div id="cuisines-value" class="cuisines-value-style">
-                    Bakery
-                </div>
-                <div id=cost-for-two-label class="cost-for-two-label-style">
-                    COST FOR TWO:
-                </div>
-                <div id=cost-for-two-value class="cost-for-two-value-style">
-                    ₹ 700
-                </div>
-            </div>
-        </div>
-        <div id="pagination" class="pagination-style">
-                    <button class="pagination-button-style pagination-prev-button-style "> < </button>
-                    <button class="pagination-button-style"> 1 </button>
-                    <button class="pagination-button-style"> 2 </button>
-                    <button class="pagination-button-style"> 3 </button>
-                    <button class="pagination-button-style"> 4 </button>
-                    <button class="pagination-button-style pagination-next-button-style"> > </button>
+            <div id="card-column" class="col-md-7">
+                <div id="card1-data" class="row">
+                    <div id="card1" class="card-style">
+                        <div id="card-header-section1" class="card-header-section-style">
+                            <img id="edureka-image" src="images/restaurant-icon.png" class="restaurant-icon-style">
+                            <h2 class="restaurant-name-style"> The Big Chill Cakery </h2>
+                            <div class="restaurant-address-style">Fort</div>
+                            <div class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli
+                                ..
+                            </div>
+                        </div>
+                        <div>
+                            <br>
+                            <br>
+                            <hr width="90%" class="hr-separator-style">
+                            <br>
+                            <div id="cuisines-label" class="cuisines-label-style">
+                                CUISINES:
+                            </div>
+                            <div id="cuisines-value" class="cuisines-value-style">
+                                Bakery
+                            </div>
+                            <div id=cost-for-two-label class="cost-for-two-label-style">
+                                COST FOR TWO:
+                            </div>
+                            <div id=cost-for-two-value class="cost-for-two-value-style">
+                                ₹ 700
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div id="card2-data" class="row">
+                    <div id="card2" class="card-style">
+                        <div id="card-header-section2" class="card-header-section-style">
+                            <img id="edureka-image" src="images/restaurant-icon.png" class="restaurant-icon-style">
+                            <h2 class="restaurant-name-style"> The Bake Shop </h2>
+                            <div class="restaurant-address-style">Fort</div>
+                            <div class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli
+                                ..
+                            </div>
+                        </div>
+                        <div>
+                            <br>
+                            <br>
+                            <hr width="90%" class="hr-separator-style">
+                            <br>
+                            <div id="cuisines-label" class="cuisines-label-style">
+                                CUISINES:
+                            </div>
+                            <div id="cuisines-value" class="cuisines-value-style">
+                                Bakery
+                            </div>
+                            <div id=cost-for-two-label class="cost-for-two-label-style">
+                                COST FOR TWO:
+                            </div>
+                            <div id=cost-for-two-value class="cost-for-two-value-style">
+                                ₹ 700
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div id="card3-data" class="row">
+                    <div id="card3" class="card-style">
+                        <div id="card-header-section3" class="card-header-section-style">
+                            <img id="edureka-image" src="images/restaurant-icon.png" class="restaurant-icon-style">
+                            <h2 class="restaurant-name-style"> Cake and Bake </h2>
+                            <div class="restaurant-address-style">Fort</div>
+                            <div class="restaurant-address-details-style">Shop 1, Plot D, Samruddhi Complex, Chincholli
+                                ..
+                            </div>
+                        </div>
+                        <div>
+                            <br>
+                            <br>
+                            <hr width="90%" class="hr-separator-style">
+                            <br>
+                            <div id="cuisines-label" class="cuisines-label-style">
+                                CUISINES:
+                            </div>
+                            <div id="cuisines-value" class="cuisines-value-style">
+                                Bakery
+                            </div>
+                            <div id=cost-for-two-label class="cost-for-two-label-style">
+                                COST FOR TWO:
+                            </div>
+                            <div id=cost-for-two-value class="cost-for-two-value-style">
+                                ₹ 700
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </div><br>
+            <div id="pagination" class="pagination-style">
+                <button class="pagination-button-style pagination-prev-button-style "> < </button>
+                        <button class="pagination-button-style"> 1 </button>
+                        <button class="pagination-button-style"> 2 </button>
+                        <button class="pagination-button-style"> 3 </button>
+                        <button class="pagination-button-style"> 4 </button>
+                        <button class="pagination-button-style pagination-next-button-style"> > </button>
+            </div><br>
         </div>
     </div>
 </body>
