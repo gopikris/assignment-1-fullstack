@@ -3,6 +3,7 @@
     border-style: solid;
     border-color: gray;
     border-width: 1px;
+    height: 1000px;
 }
 
 .page-title-style {
@@ -18,25 +19,13 @@
 }
 
 .pagination-button-style {
-    width: 36px;
-    height: 36px;
-    border-radius: 7px;
-    border: 1px solid #8C96AB;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    font: normal normal medium 20px/30px Poppins;
-    color: #8C96AB;
-    opacity: 1;
+    padding: 10px;
 }
 
 .pagination-prev-button-style {
     color: rgb(165, 165, 165);
-    font: normal normal medium 20px/30px Poppins;
-    opacity: 1;
 }
 
 .pagination-next-button-style {
     color: rgb(0, 0, 0);
-    font: normal normal medium 20px/30px Poppins;
-    color: #8C96AB;
-    opacity: 1;
 }

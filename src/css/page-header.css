@@ -4,25 +4,31 @@
     background-color: rgb(201, 7, 7);
     padding: 8px;
     height: 80px;
-    align-items: center;
 }
 
 .header-icon-style {
-    height:50px;
-    width: 50px;
+    margin-top: 8px;
+    height: 66px;
+    margin-left: 60px;
 }
 
 .login-style {
+    margin-top: 14px;
+    height: 46px;
+    width: 100px;
     font-family: Poppins, sans-serif;
     color: white;
-    float: right; 
+    float: right;
     padding: 3px;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .create-account-style {
+    margin-top: 14px;
+    height: 46px;
+    width: 200px;
     font-family: Poppins, sans-serif;
     color: white;
     border-style: solid;
@@ -30,7 +36,9 @@
     border-color: white;
     border-width: 1px;
     padding: 4px;
-    display: flex; 
+    float: right;
+    margin-right: 5%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
